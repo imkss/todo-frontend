@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = "http://localhost:4000"
+const baseUrl = "https://todo-backend-2hyg.onrender.com"
 
 const getAllToDo = (setToDo) => {
     axios
