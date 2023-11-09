@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = "https://todo-backend-2hyg.onrender.com"
+const baseUrl = "https://todo-wkex.onrender.com"
 
 const getAllToDo = (setToDo) => {
     axios
@@ -42,7 +42,6 @@ const deleteToDo = (_id, setToDo) => {
     axios
         .post(`${baseUrl}/delete`, { _id })
         .then((data) => {
-            console.log(data)
             getAllToDo(setToDo)
         })
         .catch((err) => console.log(err))
